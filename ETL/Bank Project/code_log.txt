@@ -1,0 +1,11 @@
+2024-Feb-21-23:47:40:Preliminaries complete. Initiating ETL process
+2024-Feb-21-23:47:42:Data extraction complete. Initiating Transformation process
+2024-Feb-21-23:47:42:Data transformation complete. Initiating Loading process
+2024-Feb-21-23:47:42:Loading Data
+2024-Feb-21-23:47:42:SQL Connection initiated
+2024-Feb-21-23:47:42:Data loaded to Database as a table, Executing queries
+2024-Feb-21-23:47:42:Running Query
+2024-Feb-21-23:47:42:Running Query
+2024-Feb-21-23:47:42:Running Query
+2024-Feb-21-23:47:42:Process Complete
+2024-Feb-21-23:47:42:Server Connection closed
