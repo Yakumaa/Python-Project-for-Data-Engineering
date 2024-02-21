@@ -1,0 +1,14 @@
+2024-Feb-21-16:32:35,ETL Job Started
+2024-Feb-21-16:32:35,Extracting Data
+2024-Feb-21-16:32:37,Transforming Data
+2024-Feb-21-16:32:37,Loading Data
+2024-Feb-21-16:32:37,Loading Data to Database
+2024-Feb-21-16:32:37,Running Query
+2024-Feb-21-16:32:37,ETL Job Completed
+2024-Feb-21-16:34:41,ETL Job Started
+2024-Feb-21-16:34:41,Extracting Data
+2024-Feb-21-16:34:44,Transforming Data
+2024-Feb-21-16:34:44,Loading Data
+2024-Feb-21-16:34:44,Loading Data to Database
+2024-Feb-21-16:34:44,Running Query
+2024-Feb-21-16:34:44,ETL Job Completed
