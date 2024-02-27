@@ -4,7 +4,7 @@ from datetime import timedelta
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
 # Operators; we need this to write tasks!
-from airflow.operators.bash_operator import BashOperator
+from airflow.operators.bash import BashOperator
 # This makes scheduling easy
 from airflow.utils.dates import days_ago
 
@@ -31,22 +31,13 @@ dag = DAG(
     schedule_interval=timedelta(days=1),
 )
 
-# define the tasks
-
-# define the first task
-
-extract = BashOperator(
-    task_id='extract',
-    bash_command='cut -d":" -f1,3,6 /etc/passwd > /home/shrish/airflow/dags/extracted-data.txt',
-    dag=dag,
-)
-
-# define the second task
-transform_and_load = BashOperator(
-    task_id='transform',
-    bash_command='tr ":" "," < /home/shrish/airflow/dags/extracted-data.txt > /home/shrish/airflow/dags/transformed-data.csv',
+# define the task **extract_transform_and_load** to call shell script
+#calling the shell script
+extract_transform_load = BashOperator(
+    task_id="extract_transform_load",
+    bash_command="/home/shrish/airflow/dags/my_first_dag.sh ",
     dag=dag,
 )
 
 # task pipeline
-extract >> transform_and_load
+extract_transform_load
